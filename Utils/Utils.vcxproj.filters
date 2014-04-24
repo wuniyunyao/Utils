@@ -18,9 +18,15 @@
     <ClInclude Include="Box2DTMXTool.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="StaticBlockObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Box2DTMXTool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticBlockObject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -64,9 +64,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Box2DTMXTool.h" />
+    <ClInclude Include="StaticBlockObject.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Box2DTMXTool.cpp" />
+    <ClCompile Include="StaticBlockObject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
