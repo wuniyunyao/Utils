@@ -2,7 +2,8 @@
 #define __BOX2DTMXTOOL_H_
 #define PTM_RATIO 32
 #include "cocos2d.h"
-#include "Box2D.h"
+#include "Box2D\Box2D.h"
+#include "StaticBlockObject.h"
 using namespace cocos2d;
 /*
 ÎÄ¼þÃû£ºBox2DTMLTool.h
@@ -12,13 +13,13 @@ using namespace cocos2d;
 */
 class Box2DTMXTool{
 public:
-	bool readPhysicalMap(b2World *b2world);
-	bool setTiledMap(CCTMXTiledMap* tiledMap);
-	CCTMXTiledMap* getTiledMap();
-	bool readTiledMapForBlocks(b2World* world);
+	//bool readPhysicalMap(b2World *b2world,CCTMXTiledMap *tiledmap);
+	//bool setTiledMap(CCTMXTiledMap* tiledMap);
+	//CCTMXTiledMap* getTiledMap();
+	bool readTiledMapForBlocks(b2World* world,CCTMXTiledMap *tiledmap);
+	std::vector<StaticBlockObject*> mStaticBlockList;
 private:
 	CCTMXTiledMap* mTiledMap;
-	b2Body* mBody;
-	
+	b2Body* mBody;	
 };
 #endif //__BOX2DTMXTOOL_H_
